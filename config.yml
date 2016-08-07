@@ -1,0 +1,11 @@
+#
+# tghistory config file
+#
+
+telegram:
+  path: /Users/nshahzad/source/tg/bin/telegram-cli
+  pubkey: ~/.ssh/telegram.pub
+  batch_read_count: 1000
+
+output:
+  folder: output/
