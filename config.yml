@@ -7,5 +7,9 @@ telegram:
   pubkey: ~/.ssh/telegram.pub
   batch_read_count: 1000
 
-output:
-  folder: output/
+pelican:
+  bin: env/bin/pelican
+  config: pelicanconfig.py
+  working_dir: tmp/
+  output_dir: output/
+

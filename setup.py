@@ -7,6 +7,7 @@ requires = (
     'arrow==0.8.0',
     'html5lib==0.9999999',
     'jinja2==2.8',
+    'pelican==3.6.3',
     'pytest==2.9.2',
     'pytg==0.4.10',
     'pyyaml==3.11',
