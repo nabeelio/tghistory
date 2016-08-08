@@ -1,0 +1,9 @@
+
+{% for line in lines %}
+
+** {% if line.from.username is none %}{{ line.from.username }}{% else %}{{ line.from.print_name }}{% endif %} **
+::
+    {{ line.text }}
+
+{% endfor %}
+
