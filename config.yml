@@ -6,6 +6,8 @@ general:
   timezone: US/Central
   working_dir: tmp
   output_dir: output
+  exclude_users:
+    - users
 
 telegram:
   path: /Users/nshahzad/source/tg/bin/telegram-cli

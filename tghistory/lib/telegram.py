@@ -37,6 +37,16 @@ class TelegramHistory(object, metaclass=Singleton):
         """
         :param iter: yield the contact?
         """
+
+        def invalid_user(user):
+            """ skip this user? """
+            if hasattr(user, 'username'):
+                if ('Bot' in user.username or
+                    '_bot' in user.username or
+                        '_Bot' in user.username):
+                    return True
+            return False
+
         # go through the open chats. not all/any are
         # could actually be contacts
         chat_list = self.send.dialog_list()
@@ -44,9 +54,8 @@ class TelegramHistory(object, metaclass=Singleton):
             if chat.peer_type != 'user':
                 continue
 
-            if hasattr(chat, 'username'):
-                if 'Bot' in chat.username:
-                    continue
+            if invalid_user(chat):
+                continue
 
             self._contacts.append(chat)
             if iter:
@@ -62,9 +71,8 @@ class TelegramHistory(object, metaclass=Singleton):
             if contact in self._contacts:
                 continue
 
-            if hasattr(contact, 'username'):
-                if 'Bot' in contact.username:
-                    continue
+            if invalid_user(contact):
+                continue
 
             self._contacts.append(contact)
             if iter:
