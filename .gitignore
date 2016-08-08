@@ -17,8 +17,11 @@ htmlcov/
 instance/
 parts/
 sdist/
+static/
 t/
 target/
+tghistory/
+tmp/
 var/
 *.py[cod]
 *$py.class

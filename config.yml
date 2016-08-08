@@ -2,14 +2,16 @@
 # tghistory config file
 #
 
+general:
+  timezone: US/Central
+  working_dir: tmp
+  output_dir: output
+
 telegram:
   path: /Users/nshahzad/source/tg/bin/telegram-cli
   pubkey: ~/.ssh/telegram.pub
-  batch_read_count: 1000
+  batch_read_count: 100
 
 pelican:
   bin: env/bin/pelican
   config: pelicanconfig.py
-  working_dir: tmp/
-  output_dir: output/
-

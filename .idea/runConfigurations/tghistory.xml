@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="tghistory" type="PythonConfigurationType" factoryName="Python" singleton="true" show_console_on_std_out="true" show_console_on_std_err="true">
+  <configuration default="false" name="tghistory" type="PythonConfigurationType" factoryName="Python" singleton="true">
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
     <envs>

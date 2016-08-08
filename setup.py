@@ -12,6 +12,7 @@ requires = (
     'pytg==0.4.10',
     'pyyaml==3.11',
     'requests==2.10.0',
+    'typogrify==2.0.7',
 )
 
 

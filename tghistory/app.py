@@ -10,9 +10,12 @@ from tghistory.lib.singleton import Singleton
 from tghistory.lib.telegram import TelegramHistory
 
 logging.basicConfig(format='%(asctime)s - '
-                           '%(name)s:%(lineno)d:%(threadName)s - '
+                           '%(name)s:%(lineno)d - '
                            '%(levelname)s - %(message)s',
                     level=logging.DEBUG)
+
+pytg_log = logging.getLogger('pytg').setLevel(logging.INFO)
+pytg_log = logging.getLogger('pytg.sender').setLevel(logging.ERROR)
 
 LOG = logging.getLogger('tgh.app')
 
