@@ -18,7 +18,6 @@ instance/
 output/
 parts/
 sdist/
-static/
 t/
 target/
 tmp/
