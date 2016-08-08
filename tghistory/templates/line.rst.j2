@@ -3,7 +3,10 @@
 
 ** {% if line.from.username is none %}{{ line.from.username }}{% else %}{{ line.from.print_name }}{% endif %} **
 ::
-    {{ line.text }}
-
+{% if line.text is defined %}
+{{ line.text|indent(4, True) }}
+{% else %}
+    some element
+{%- endif %}
 {% endfor %}
 

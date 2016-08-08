@@ -15,6 +15,7 @@ docs/_build/
 htmlcov/
 .hypothesis/
 instance/
+output/
 parts/
 sdist/
 static/
